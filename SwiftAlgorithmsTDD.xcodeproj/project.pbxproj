@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FAC3AB2C292CD83C005705F7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC3AB2B292CD83C005705F7 /* main.swift */; };
+		FAC3AB39292CE42D005705F7 /* Swift_Algorithms_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC3AB38292CE42D005705F7 /* Swift_Algorithms_Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +26,19 @@
 /* Begin PBXFileReference section */
 		FAC3AB28292CD83C005705F7 /* SwiftAlgorithmsTDD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftAlgorithmsTDD; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC3AB2B292CD83C005705F7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		FAC3AB36292CE42D005705F7 /* Swift Algorithms Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift Algorithms Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC3AB38292CE42D005705F7 /* Swift_Algorithms_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Algorithms_Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FAC3AB25292CD83C005705F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC3AB33292CE42D005705F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				FAC3AB2A292CD83C005705F7 /* SwiftAlgorithmsTDD */,
+				FAC3AB37292CE42D005705F7 /* Swift Algorithms Tests */,
 				FAC3AB29292CD83C005705F7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				FAC3AB28292CD83C005705F7 /* SwiftAlgorithmsTDD */,
+				FAC3AB36292CE42D005705F7 /* Swift Algorithms Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +72,14 @@
 				FAC3AB2B292CD83C005705F7 /* main.swift */,
 			);
 			path = SwiftAlgorithmsTDD;
+			sourceTree = "<group>";
+		};
+		FAC3AB37292CE42D005705F7 /* Swift Algorithms Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FAC3AB38292CE42D005705F7 /* Swift_Algorithms_Tests.swift */,
+			);
+			path = "Swift Algorithms Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +102,23 @@
 			productReference = FAC3AB28292CD83C005705F7 /* SwiftAlgorithmsTDD */;
 			productType = "com.apple.product-type.tool";
 		};
+		FAC3AB35292CE42D005705F7 /* Swift Algorithms Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC3AB3A292CE42D005705F7 /* Build configuration list for PBXNativeTarget "Swift Algorithms Tests" */;
+			buildPhases = (
+				FAC3AB32292CE42D005705F7 /* Sources */,
+				FAC3AB33292CE42D005705F7 /* Frameworks */,
+				FAC3AB34292CE42D005705F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swift Algorithms Tests";
+			productName = "Swift Algorithms Tests";
+			productReference = FAC3AB36292CE42D005705F7 /* Swift Algorithms Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +130,9 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					FAC3AB27292CD83C005705F7 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					FAC3AB35292CE42D005705F7 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -111,9 +151,20 @@
 			projectRoot = "";
 			targets = (
 				FAC3AB27292CD83C005705F7 /* SwiftAlgorithmsTDD */,
+				FAC3AB35292CE42D005705F7 /* Swift Algorithms Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAC3AB34292CE42D005705F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAC3AB24292CD83C005705F7 /* Sources */ = {
@@ -121,6 +172,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC3AB2C292CD83C005705F7 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC3AB32292CE42D005705F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC3AB39292CE42D005705F7 /* Swift_Algorithms_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +319,34 @@
 			};
 			name = Release;
 		};
+		FAC3AB3B292CE42D005705F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.etoncwFM.Swift-Algorithms-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FAC3AB3C292CE42D005705F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.etoncwFM.Swift-Algorithms-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -277,6 +364,15 @@
 			buildConfigurations = (
 				FAC3AB30292CD83C005705F7 /* Debug */,
 				FAC3AB31292CD83C005705F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC3AB3A292CE42D005705F7 /* Build configuration list for PBXNativeTarget "Swift Algorithms Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC3AB3B292CE42D005705F7 /* Debug */,
+				FAC3AB3C292CE42D005705F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
